@@ -12,7 +12,7 @@
 // // a8be8d503ac9b8ddca923440ecc5cdf743489a294e6fdcec3bc730e364cbbd72c38e3ac4dee227755b85ad79c63334143dca20309e1eb98053b5e30822e596d6
 // console.log("doubleSha3 of abcd", doubleSha3( doubleSha3(doubleSha3("a") + doubleSha3("b")) + doubleSha3(doubleSha3("c") + doubleSha3("d")) ));
 // // 1faf78938bc66bf5c824f97550662157ab3cefcc74ef282f3d29b98248395da44825fe851c14900f9b516649d6151e4e75791a9a36360129f549fd80d314a617
-const arr = ["a", "b", "c", "d"];
+const arr = "a";
 
 const merkleTree = require('./');
 
