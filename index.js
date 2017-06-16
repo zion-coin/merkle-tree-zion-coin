@@ -1,7 +1,5 @@
 const SHA3   = require('sha3');
 
-const arr = ["a", "b", "c", "d"];
-
 class merkleTree {
   constructor(input) {
     const self = this;
@@ -55,5 +53,4 @@ function doubleSha3(payload) {
                   .digest('hex');
 }
 
-let mT = new merkleTree(arr);
-console.log(mT);
+module.exports = merkleTree
