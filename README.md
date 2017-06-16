@@ -5,6 +5,7 @@
 ``` javascript
 const merkleTree = require('./');
 
+const arr = ["a", "b", "c", "d"];
 let mT = new merkleTree(arr);
 
 console.log(mT);
@@ -23,4 +24,13 @@ merkleTree {
         'e71003603d91e84dbd6fc36c49e7b42ce52922628757f7825394c71c07a4b0e42cd3a66aab93dc772f174663c762121ba9db5ecbca4113934bc48433507dc169' ] },
   depth: 2 }
 */
+```
+
+Get the root
+``` javascript
+const arr = ["a", "b", "c", "d"];
+let mT = new merkleTree(arr).digest();
+
+console.log(mT);
+// '1faf78938bc66bf5c824f97550662157ab3cefcc74ef282f3d29b98248395da44825fe851c14900f9b516649d6151e4e75791a9a36360129f549fd80d314a617'
 ```

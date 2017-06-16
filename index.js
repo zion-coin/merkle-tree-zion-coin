@@ -1,4 +1,4 @@
-const SHA3   = require('sha3');
+const SHA3 = require('sha3');
 
 class merkleTree {
   constructor(input) {
