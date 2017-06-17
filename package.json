@@ -1,14 +1,26 @@
 {
   "name": "merkle-tree-zion-coin",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Binary Merkle Tree for the blockchain",
-  "main": "index.js",
+  "main": "./lib/merkle-tree.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint+build+test": "npm run lint && npm run build && npm run test",
+    "lint": "echo linting... && eslint ./tests/**/*.js && echo 'successfully linted'",
+    "build": "echo building... && babel src/ -d lib/ && echo 'successfully built'",
+    "prepublish": "yarn run build",
+    "test": "echo running server tests... && tape tests/**/*.js && echo 'successfully completed tests'"
   },
   "author": "Craig OConnor",
   "license": "ISC",
   "dependencies": {
     "sha3": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.0.0",
+    "flow-bin": "^0.48.0",
+    "tape": "^4.6.3"
   }
 }
