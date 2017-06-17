@@ -1,3 +1,4 @@
+//@flow
 const SHA3 = require('sha3');
 
 class merkleTree {
@@ -47,7 +48,7 @@ class merkleTree {
   }
 }
 
-function doubleSha3(payload) {
+function doubleSha3(payload: string | buffer): string {
   if (typeof payload === 'string')
     payload = Buffer.from(payload);
 
