@@ -7,6 +7,8 @@
 [downloads-image]: https://img.shields.io/npm/dm/merkle-tree-zion-coin.svg
 [downloads-url]: https://npmjs.org/package/merkle-tree-zion-coin
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zion-coin/merkle-tree-zion-coin.svg)](https://greenkeeper.io/)
+
 `const merkleTree = require('merkle-tree-zion-coin');`
 
 ``` javascript
