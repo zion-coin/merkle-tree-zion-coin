@@ -1,4 +1,4 @@
-//@flow
+// @flow
 const SHA3 = require('sha3');
 
 class merkleTree {

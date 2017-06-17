@@ -1,10 +1,10 @@
 {
   "name": "merkle-tree-zion-coin",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Binary Merkle Tree for the blockchain",
   "main": "./lib/merkle-tree.js",
   "scripts": {
-    "lint+build+test": "npm run lint && npm run build && npm run test",
+    "lint+build+test": "yarn run lint && yarn run build && yarn run test",
     "lint": "echo linting... && eslint ./src/**/*.js && echo 'successfully linted'",
     "build": "echo building... && babel src/ -d lib/ && echo 'successfully built'",
     "prepublish": "yarn run build",
