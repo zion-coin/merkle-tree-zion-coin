@@ -1,5 +1,7 @@
 # merkle-tree-zion-coin
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zion-coin/merkle-tree-zion-coin.svg)](https://greenkeeper.io/)
+
 `const merkleTree = require('merkle-tree-zion-coin');`
 
 ``` javascript
